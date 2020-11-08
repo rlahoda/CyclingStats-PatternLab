@@ -1,0 +1,111 @@
+.primary-bkg {
+  background-color: var(--primary, $brand-primary);
+  color: var(--primary-txt, $brand-primary-text);
+}
+
+.primary-text {
+  background-color: var(--primary-txt, $brand-primary-text);
+  color: var(--primary, $brand-primary);
+}
+
+.primary-lt-bkg {
+  background-color: var(--primary-lt, $brand-primary-light);
+  color: var(--primary-lt-txt, $brand-primary-light-text);
+}
+
+.primary-lt-text {
+  background-color: var(--primary-lt-txt, $brand-primary-light-text);
+  color: var(--primary-lt, $brand-primary-light);
+}
+.primary-drk-bkg {
+  background-color: var(--primary-drk, $brand-primary-dark);
+  color: var(--primary-drk-txt, $brand-primary-dark-text);
+}
+
+.primary-drk-text {
+  background-color: var(--primary-drk-txt, $brand-primary-dark-text);
+  color: var(--primary-drk, $brand-primary-dark);
+}
+
+.secondary-bkg {
+  background-color: var(--secondary, $brand-secondary);
+  color: var(--secondary-txt, $brand-secondary-text);
+}
+
+.secondary-text {
+  background-color: var(--secondary-txt, $brand-secondary-text);
+  color: var(--secondary, $brand-secondary);
+}
+
+.secondary-lt-bkg {
+  background-color: var(--secondary-lt, $brand-secondary-light);
+  color: var(--secondary-lt-txt, $brand-secondary-light-text);
+}
+
+.secondary-lt-text {
+  background-color: var(--secondary-lt-txt, $brand-secondary-light-text);
+  color: var(--secondary-lt, $brand-secondary-light);
+}
+
+.secondary-lt2-bkg {
+  background-color: $brand-secondary-light-2;
+  color: $brand-secondary-light-2-text;
+}
+
+.secondary-lt2-text {
+  background-color: $brand-secondary-light-2-text;
+  color: $brand-secondary-light-2;
+}
+.secondary-drk-bkg {
+  background-color: $brand-secondary-dark;
+  color: $brand-secondary-dark-text;
+}
+
+.secondary-drk-text {
+  background-color: $brand-secondary-dark-text;
+  color: $brand-secondary-dark;
+}
+
+.gray-bkg {
+  background-color: $gray;
+  color: $black;
+}
+.gray-lt-bkg {
+  background-color: $gray-light;
+  color: $black;
+}
+.gray-lt2-bkg {
+  background-color: $gray-light-2;
+  color: $black;
+}
+.gray-lt3-bkg {
+  background-color: $gray-light-3;
+  color: $black;
+}
+.gray-drk-bkg {
+  background-color: $gray-dark;
+  color: $white;
+}
+.gray-drk2-bkg {
+  background-color: $gray-dark-2;
+  color: $white;
+}
+.gray-med-bkg {
+  background-color: $gray-med;
+  color: $white;
+}
+
+.success-bkg {
+  background-color: $success;
+  color: $success-text;
+}
+
+.error-bkg {
+  background-color: $error;
+  color: $error-text;
+}
+
+.warning-bkg {
+  background-color: $warning;
+  color: $warning-text;
+}
