@@ -1,6 +1,20 @@
   
   <!--DO NOT REMOVE-->
   {{ patternLabFoot | raw }}
-  
+  <script>
+    function colorChange(event) {
+      const value = event.target.value;
+      const body = document.querySelector("body");
+        if (value === "default"){
+          body.classList.remove("tdf","giro","vuelta");
+        } else {
+          body.classList.remove("tdf","giro","vuelta");
+          body.classList.add(value);
+        }
+     }
+    const colorSelector = document.querySelector("#color-select");
+      colorSelector.addEventListener("change", colorChange);
+
+  </script>
   </body>
 </html>
