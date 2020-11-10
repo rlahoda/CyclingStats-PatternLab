@@ -2,17 +2,30 @@
     $Table
 \*------------------------------------*/
 table {
-	border-collapse: collapse; 
-	border-spacing: 0; 
-	border: 1px solid $gray;
-	width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid $gray-dark;
+  width: 100%;
+  text-align: center;
 }
 th {
-	text-align: left;
-	border: 1px solid $gray;
-	padding: 0.2em;
+  text-align: left;
+  padding: 0.2em;
+  text-align: center;
+  font-weight: $font-weight-bold;
+  font-style: italic;
+  border-bottom: 2px solid $gray-dark;
 }
+
 td {
-	border: 1px solid $gray;
-	padding: 0.2em;
+  padding: 0.2em;
+}
+
+tr {
+  border-top: 1px solid $gray-dark;
+  font-weight: $font-weight-light;
+}
+
+tr:nth-child(even) {
+  background-color: $gray-light-2;
 }

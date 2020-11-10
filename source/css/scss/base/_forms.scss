@@ -16,6 +16,8 @@ fieldset {
 label {
   display: block;
   padding-bottom: $space-half;
+  font-weight: $font-weight-bold;
+  font-style: italic;
 }
 
 button,
@@ -32,6 +34,41 @@ textarea {
   width: 100%;
   border: 1px solid $gray;
   padding: $pad-half 0.65rem;
+}
+
+select.sel-btn {
+  appearance: none;
+  border: none;
+  background-color: var(--primary, $brand-primary);
+  color: var(--primary-txt, $brand-primary-text);
+  text-align: center;
+  border-radius: $border-radius;
+  font-weight: $font-weight-medium;
+  padding: $pad;
+  padding-right: $pad-double;
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 1em;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 15.6 7.7' style='enable-background:new 0 0 15.6 7.7;' xml:space='preserve'%3E%3Cpolygon style='fill:var(--primary-txt,#{$brand-primary-text});' points='0,0 7.8,7.7 15.6,0 '/%3E%3C/svg%3E%0A");
+
+  .tdf & {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 15.6 7.7' style='enable-background:new 0 0 15.6 7.7;' xml:space='preserve'%3E%3Cpolygon style='fill:var(--primary-txt,#{$tdf-primary-text});' points='0,0 7.8,7.7 15.6,0 '/%3E%3C/svg%3E%0A");
+  }
+
+  &.sel-btn-small {
+    padding: $pad-half;
+    padding-right: $pad-double;
+  }
+
+  & option {
+    background-color: $white;
+    color: $gray-dark-2;
+    font-weight: $font-weight-normal;
+  }
+
+  & > optgroup > option {
+    padding-left: 10px;
+  }
 }
 
 input[type="text"],

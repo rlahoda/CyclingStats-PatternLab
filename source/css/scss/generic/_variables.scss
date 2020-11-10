@@ -37,6 +37,28 @@ $warning: #fff664;
 $warning-text: $black;
 $information: #000db5;
 
+//Special Race Colors
+$tdf-primary: #ff0;
+$tdf-primary-text: $gray-dark-2;
+$tdf-primary-light: rgb(255, 255, 183);
+$tdf-primary-light-text: $gray-dark-2;
+$tdf-primary-dark: rgb(141, 141, 9);
+$tdf-primary-dark-text: $white;
+
+$vuelta-primary: #da291c;
+$vuelta-primary-text: $white;
+$vuelta-primary-light: #f88a82;
+$vuelta-primary-light-text: $gray-dark-2;
+$vuelta-primary-dark: #79140d;
+$vuelta-primary-dark-text: $white;
+
+$giro-primary: #ff286e;
+$giro-primary-text: $white;
+$giro-primary-light: #fd99bb;
+$giro-primary-light-text: $gray-dark-2;
+$giro-primary-dark: #a31847;
+$giro-primary-dark-text: $white;
+
 //Typography
 $font: "usual", sans-serif;
 $font-secondary: "usual", sans-serif;
@@ -86,7 +108,7 @@ $bp-xxl: 89em;
 $bp-xxxl: 93em;
 
 // Drop Shadow
-$shadow: 4px 4px 0 $brand-primary;
+$shadow: 4px 4px 0 var(--primary, $brand-primary);
 
 :root {
   --primary: #{$brand-primary};
@@ -103,4 +125,31 @@ $shadow: 4px 4px 0 $brand-primary;
   --secondary-lt-2-txt: #{$brand-secondary-light-2-text};
   --secondary-drk: #{$brand-secondary-dark};
   --secondary-drk-txt: #{$brand-secondary-dark-text};
+}
+
+.tdf * {
+  --primary: #{$tdf-primary};
+  --primary-drk: #{$tdf-primary-dark};
+  --primary-txt: #{$tdf-primary-text};
+  --primary-lt: #{$tdf-primary-light};
+  --primary-lt-txt: #{$tdf-primary-light-text};
+  --primary-drk-txt: #{$tdf-primary-dark-text};
+}
+
+.vuelta * {
+  --primary: #{$vuelta-primary};
+  --primary-drk: #{$vuelta-primary-dark};
+  --primary-txt: #{$vuelta-primary-text};
+  --primary-lt: #{$vuelta-primary-light};
+  --primary-lt-txt: #{$vuelta-primary-light-text};
+  --primary-drk-txt: #{$vuelta-primary-dark-text};
+}
+
+.giro * {
+  --primary: #{$giro-primary};
+  --primary-drk: #{$giro-primary-dark};
+  --primary-txt: #{$giro-primary-text};
+  --primary-lt: #{$giro-primary-light};
+  --primary-lt-txt: #{$giro-primary-light-text};
+  --primary-drk-txt: #{$giro-primary-dark-text};
 }

@@ -1,40 +1,44 @@
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
+button,
 .btn {
-	display: inline-block;
-	background: $gray-dark;
-	color: $white;
-	line-height: 1;
-	font-weight: bold;
-	padding: $pad;
-	border: 0;
-	text-align: center;
-	
-	&:hover, &:focus {
-		background: $gray;
-		color: $white;
-	}
+  display: inline-block;
+  background: var(--primary, $brand-primary);
+  color: var(--primary-txt, $brand-primary-text);
+  line-height: 1;
+  font-weight: $font-weight-medium;
+  padding: $pad;
+  border: 0;
+  text-align: center;
+  border-radius: $border-radius;
 
-	&.disabled {
-		background: $gray-light-2;
-		color: $gray;
-	}
+  &:hover,
+  &:focus {
+    background: var(--primary-drk, $brand-primary-dark);
+    color: var(--primary-drk-txt, $brand-primary-dark-text);
+  }
+
+  &:active {
+    background: var(--primary-lt, $brand-primary-light);
+    color: var(--primary-lt-txt, $brand-primary-light-text);
+  }
+
+  &.disabled,
+  &:disabled {
+    background: $gray-light-2;
+    color: $gray;
+  }
 }
 
 .btn-small {
-	padding: $pad-half;
+  padding: $pad-half;
 }
 
 .btn-large {
-	padding: $pad-half;
-	text-transform: uppercase;
-	background: $gray;
-	font-size: 1.4rem;
-	font-weight: normal;
-}
-
-
-.text-btn {
-	font-style: italic;
+  padding: $pad-half;
+  text-transform: uppercase;
+  background: $gray;
+  font-size: 1.4rem;
+  font-weight: normal;
 }

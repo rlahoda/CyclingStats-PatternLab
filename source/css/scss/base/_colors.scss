@@ -48,13 +48,13 @@
 }
 
 .secondary-lt2-bkg {
-  background-color: $brand-secondary-light-2;
-  color: $brand-secondary-light-2-text;
+  background-color: var(--secondary-lt-2, $brand-secondary-light-2);
+  color: var(--secondary-lt-2-txt, $brand-secondary-light-2-text);
 }
 
 .secondary-lt2-text {
-  background-color: $brand-secondary-light-2-text;
-  color: $brand-secondary-light-2;
+  background-color: var(--secondary-lt-2-txt, $brand-secondary-light-2-text);
+  color: var(--secondary-lt-2, $brand-secondary-light-2);
 }
 .secondary-drk-bkg {
   background-color: $brand-secondary-dark;

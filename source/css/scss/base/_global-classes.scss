@@ -17,13 +17,13 @@
 }
 
 /* Completely remove from the flow and screen readers. */
-.is-hidden {
+.hidden {
   display: none !important;
   visibility: hidden !important;
 }
 
 /* Completely remove from the flow but leave available to screen readers. */
-.is-vishidden {
+.visually-hidden {
   position: absolute !important;
   overflow: hidden;
   width: 1px;
