@@ -3,21 +3,38 @@
 \*------------------------------------*/
 
 /* Flexible Media */
-img, video, object {
-	max-width: 100%;
-	height: auto;
+img,
+video,
+object {
+  max-width: 100%;
+  height: auto;
 }
 
 iframe {
-	margin-bottom: $space;
+  margin-bottom: $space;
 }
 
 figure {
-	margin-bottom: $space;
-	img {
-		margin-bottom: $space-half;
-	}
+  margin-bottom: $space;
+  img {
+    margin-bottom: $space-half;
+  }
 }
 figcaption {
-	font-style: italic;
+  font-style: italic;
+}
+
+.logo {
+  display: block;
+}
+
+.logo-container {
+  height: 3em;
+  max-width: 300px;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+  & img {
+    flex: 1 1 auto;
+  }
 }

@@ -74,3 +74,12 @@ abbr {
 .italic {
   font-style: italic;
 }
+
+cite {
+  font-weight: $font-weight-bold;
+  &:before {
+    content: "–";
+    padding-right: $pad-quarter;
+    padding-left: $pad;
+  }
+}
