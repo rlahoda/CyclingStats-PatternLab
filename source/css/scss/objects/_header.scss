@@ -1,4 +1,15 @@
 header {
   display: flex;
   justify-content: space-between;
+
+  & .logo-container {
+    width: 30%;
+  }
+  & .search-form {
+    width: 30%;
+  }
+
+  & .primary-nav {
+    width: 30%;
+  }
 }

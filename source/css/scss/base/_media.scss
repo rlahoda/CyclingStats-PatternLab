@@ -29,12 +29,10 @@ figcaption {
 }
 
 .logo-container {
-  height: 3em;
-  max-width: 300px;
   display: flex;
   justify-content: flex-end;
   flex: 1 1 auto;
-  & img {
+  & a {
     flex: 1 1 auto;
   }
 }

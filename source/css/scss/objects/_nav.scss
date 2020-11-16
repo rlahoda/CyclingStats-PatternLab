@@ -3,6 +3,31 @@
 \*------------------------------------*/
 
 nav.primary-nav {
+  width: 100vw;
+  background-color: var(--primary, $brand-primary);
+  color: var(--primary-txt, $brand-primary-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.primary-nav__top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary-nav__items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  // margin: 0;
+}
+
+.primary-nav__items-container {
+  padding: $pad-double;
 }
 
 //Pagination

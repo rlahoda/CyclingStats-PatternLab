@@ -1,9 +1,26 @@
-<nav id="nav" class="primary-nav">
-
-	<ul class="nav-list">
-		<li><a href="{{ url }}">Home</a></li>
-		<li><a href="{{ url }}">About</a></li>
-		<li><a href="{{ url }}">Blog</a></li>
-		<li><a href="{{ url }}">Contact</a></li>
-	</ul>
-</nav><!--end .nav-->
+<nav class="primary-nav">
+  <div class="primary-nav__top-bar">
+    <button type="button" name="button">Menu</button>
+    {% include "@molecules/04-forms/00-search.html.twig" %}
+    {% include "@atoms/04-images/00-logo.html.twig" %}
+  </div>
+  <div class="primary-nav__items">
+    <div class="primary-nav__items-container">
+      <div class="nav-category-list__title">Category Title</div>
+      <ul class="nav-category-list__list">
+        <li>Category 1</li>
+        <li>Category 2</li>
+        <li>Category 3</li>
+      </ul>
+    </div>
+    <div class="primary-nav__items-container">
+      <div class="nav-category-list__title">Category Title</div>
+      <ul class="nav-category-list__list">
+        <li>Category 1</li>
+        <li>Category 2</li>
+        <li>Category 3</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--end .nav-->
