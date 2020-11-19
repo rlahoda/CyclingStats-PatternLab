@@ -31,8 +31,42 @@ figcaption {
 .logo-container {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  max-width: 150px;
   flex: 1 1 auto;
   & a {
     flex: 1 1 auto;
+  }
+}
+
+#cyclingstats-logo {
+  .cyclingstats-logo--outer-pill {
+    fill: var(--primary, $brand-primary);
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: fill;
+  }
+
+  .cyclingstats-logo--text {
+    fill: var(--primary-txt, $brand-primary-text);
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: fill;
+  }
+}
+
+.primary-nav--open #cyclingstats-logo {
+  .cyclingstats-logo--outer-pill {
+    fill: var(--primary-txt, $brand-primary-text);
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: fill;
+  }
+
+  .cyclingstats-logo--text {
+    fill: var(--primary, $brand-primary);
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: fill;
   }
 }

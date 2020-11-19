@@ -1,26 +1,25 @@
-(function(w) {
-  var sw = document.body.clientWidth,
-    sh = document.body.clientHeight;
+// (function(w) {
+//   var sw = document.body.clientWidth,
+//     sh = document.body.clientHeight;
 
-  $(w).resize(function() {
-    //Update dimensions on resize
-    sw = document.body.clientWidth;
-    sh = document.body.clientHeight;
+//   $(w).resize(function() {
+//     //Update dimensions on resize
+//     sw = document.body.clientWidth;
+//     sh = document.body.clientHeight;
 
-    //updateAds();
-  });
-
-  //Navigation toggle
-  $('.nav-toggle-menu').click(function(e) {
-    e.preventDefault();
-    $(this).toggleClass('active');
-    $('.nav').toggleClass('active');
-  });
+//     //updateAds();
+//   });}
 
   //Navigation toggle
-  $('.nav-toggle-search').click(function(e) {
-    e.preventDefault();
-    $(this).toggleClass('active');
-    $('.header .search-form').toggleClass('active');
-  });
-})(this);
+function navToggle() {
+  console.log("toggle");
+  const button = document.querySelector('#primary-nav');
+  button.classList.toggle("primary-nav--open")
+}
+
+function navInit() {
+  console.log("initialized");
+  const button = document.querySelector('#primary-nav__menu-button');
+  button.addEventListener('click',navToggle)
+}
+navInit()

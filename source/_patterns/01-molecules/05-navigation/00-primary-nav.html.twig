@@ -1,8 +1,19 @@
-<nav class="primary-nav">
+<nav id="primary-nav" class="primary-nav primary-nav--open ">
   <div class="primary-nav__top-bar">
-    <button type="button" name="button">Menu</button>
-    {% include "@molecules/04-forms/00-search.html.twig" %}
-    {% include "@atoms/04-images/00-logo.html.twig" %}
+    <div class="primary-nav__top-bar__item">
+      <button type="button" name="menu-button" id="primary-nav__menu-button" class="btn-main-menu btn-main-menu--reversed">Menu<div class="btn-main-menu__icon">
+          <div class="btn-main-menu__icon--inner"></div>
+          <div class="btn-main-menu__icon--inner"></div>
+          <div class="btn-main-menu__icon--inner"></div>
+        </div>
+      </button>
+    </div>
+    <div class="primary-nav__top-bar__item">
+      {% include "@molecules/04-forms/00-search-reversed.html.twig" %}
+    </div>
+    <div class="primary-nav__top-bar__item logo-reversed">
+      {% include "@atoms/04-images/00-logo.html.twig" %}
+    </div>
   </div>
   <div class="primary-nav__items">
     <div class="primary-nav__items-container">
