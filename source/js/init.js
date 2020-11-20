@@ -12,13 +12,23 @@
 
   //Navigation toggle
 function navToggle() {
-  console.log("toggle");
   const button = document.querySelector('#primary-nav');
-  button.classList.toggle("primary-nav--open")
+  // if contains --open remove --expanded, wait a moment then remove --open, else, add both at the same time
+  if (button.classList.contains("primary-nav--open") || button.classList.contains("primary-nav--expanded")) {
+    button.classList.remove("primary-nav--expanded")
+    setTimeout(function(){
+      button.classList.remove("primary-nav--open")
+    },200);
+    
+  } else {
+    button.classList.add("primary-nav--expanded")
+    button.classList.add("primary-nav--open")
+    
+  }
+
 }
 
 function navInit() {
-  console.log("initialized");
   const button = document.querySelector('#primary-nav__menu-button');
   button.addEventListener('click',navToggle)
 }
