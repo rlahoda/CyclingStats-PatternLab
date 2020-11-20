@@ -9,6 +9,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  line-height: 3;
 
   li {
     margin: 0 $space-half;
@@ -17,6 +18,12 @@
   a {
     padding: $pad-half $pad;
     background-color: var(--primary, $brand-primary);
-    color: var(--primary-text, $brand-primary-text);
+    color: var(--primary-txt, $brand-primary-text);
+  }
+  .current a {
+    border: solid 2px var(--primary, $brand-primary);
+    border-collapse: collapse;
+    color: var(--primary, $brand-primary);
+    background-color: var(--primary-txt, $brand-primary-text);
   }
 }

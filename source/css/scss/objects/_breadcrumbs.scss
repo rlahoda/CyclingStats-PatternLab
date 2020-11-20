@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .breadcrumb-item {
@@ -11,11 +12,15 @@
     padding: $pad-half;
     content: ">";
     color: var(--primary, $brand-primary);
-    filter: drop-shadow(0 0px 1px rgba(0, 0, 0, 0.308));
   }
 
   &:nth-of-type(1) {
     padding-left: 0;
+  }
+}
+.tdf .breadcrumb-item {
+  &::after {
+    color: var(--primary-txt, $brand-primary-text);
   }
 }
 
@@ -33,4 +38,7 @@
     text-decoration: underline;
     text-decoration-color: var(--primary, $brand-primary);
   }
+}
+.tdf .breadcrumb-item a {
+  color: var(--primary-txt, $brand-primary-text);
 }
