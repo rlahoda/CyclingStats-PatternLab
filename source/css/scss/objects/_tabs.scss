@@ -1,33 +1,38 @@
 .tabs {
-	overflow: hidden;
+  width: 100%;
+  border-bottom: 2px solid $gray-dark;
+  font-weight: $font-weight-light;
+  font-style: italic;
 
-	ul {
-		display: table;
-		width: 100%;
-	}
-	
-	li {
-		display: table-cell;
-		text-align: center;
-		border-right: 1px solid $gray-light-3;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-		&:last-child {
-			border-right: 0;
-		}
-	}
+  li {
+    margin-right: $space;
+    border-top: 4px solid rgba(255, 255, 255, 0);
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
 
-	a {
-		display: block;
-		padding: $pad-half;
-		background: $gray;
+    &.tab--active {
+      border-top: 4px solid var(--primary, $brand-primary);
+      border-bottom: 4px solid var(--primary, $brand-primary);
+      font-weight: $font-weight-bold;
+    }
+  }
 
-		&:hover, &:focus {
-			background: $gray-light-3;
-		}
+  a {
+    display: block;
+    padding: $pad-quarter $pad-double;
+    &:hover,
+    &:focus {
+      background: var(--primary, $brand-primary);
+      color: var(--primary-txt, $brand-primary-text);
+    }
 
-		&.active {
-			background: $gray-dark;
-			color: $white;
-		}
-	}
+    &.active {
+      border-top: var(--primary, $brand-primary);
+      border-bottom: var(--primary, $brand-primary);
+    }
+  }
 }

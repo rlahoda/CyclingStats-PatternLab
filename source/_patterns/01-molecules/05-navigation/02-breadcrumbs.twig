@@ -1,7 +1,21 @@
-<ul class="breadcrumbs">
-	<li><a href="{{ url }}">Grandparent</a></li>
-	<li><a href="{{ url }}">Parent</a></li>
-	<li><a href="{{ url }}">Child</a></li>
-	<li><a href="{{ url }}">Grandchild</a></li>
-	<li><a href="{{ url }}">Great-Grandchild</a></li>
+<ul class="breadcrumb-container">
+  <li class="breadcrumb-item">
+    <a href="{{ url }}">Grandparent</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="{{ url }}">Parent</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="{{ url }}">Child</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="{{ url }}">Grandchild</a>
+  </li>
+  <li class="breadcrumb-item breadcrumb-item--active">
+    <i>
+      <strong>
+        <a href="{{ url }}">Great-Grandchild</a>
+      </strong>
+    </i>
+  </li>
 </ul>

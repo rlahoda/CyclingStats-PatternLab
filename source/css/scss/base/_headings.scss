@@ -19,19 +19,49 @@ hr {
 
 /* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
 .giga {
-  font-size: 80px;
-  font-size: 5rem; /* 80px */
-  line-height: 1.2; /* 96px */
-}
-.mega {
   font-size: 64px;
   font-size: 4rem; /* 64px */
+  line-height: 1.2;
+  @include respond-at($bp-med) {
+    font-size: 72px;
+    font-size: 4.5rem; /* 80px */
+    line-height: 1.2; /* 96px */
+  }
+  @include respond-at($bp-large) {
+    font-size: 80px;
+    font-size: 5rem; /* 80px */
+    line-height: 1.2; /* 96px */
+  }
+}
+.mega {
+  font-size: 48px;
+  font-size: 3rem; /* 64px */
   line-height: 1.125; /* 72px */
+  @include respond-at($bp-med) {
+    font-size: 56px;
+    font-size: 3.5rem; /* 64px */
+    line-height: 1.125; /* 72px */
+  }
+  @include respond-at($bp-large) {
+    font-size: 64px;
+    font-size: 4rem; /* 64px */
+    line-height: 1.125; /* 72px */
+  }
 }
 .kilo {
-  font-size: 48px;
-  font-size: 3rem; /* 48px */
+  font-size: 32px;
+  font-size: 2rem; /* 48px */
   line-height: 1; /* 48px */
+  @include respond-at($bp-med) {
+    font-size: 40px;
+    font-size: 2.5rem; /* 48px */
+    line-height: 1; /* 48px */
+  }
+  @include respond-at($bp-large) {
+    font-size: 48px;
+    font-size: 3rem; /* 48px */
+    line-height: 1; /* 48px */
+  }
 }
 
 /* Define headings and their associated classes here. */

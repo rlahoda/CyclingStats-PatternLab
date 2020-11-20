@@ -19,6 +19,12 @@
 .text {
   a {
     text-decoration: underline;
+    text-decoration-color: var(--primary, $brand-primary);
+
+    &:hover {
+      background-color: var(--primary, $brand-primary);
+      color: var(--primary-txt, $brand-primary-text);
+    }
   }
 
   ul {
