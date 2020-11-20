@@ -9,7 +9,7 @@ input[type="submit"],
   color: var(--primary-txt, $brand-primary-text);
   line-height: 1;
   font-weight: $font-weight-medium;
-  padding: $pad;
+  padding: $pad-half;
   border: 0;
   text-align: center;
   border-radius: $border-radius;
@@ -29,6 +29,10 @@ input[type="submit"],
   &:disabled {
     background: $gray-light-2;
     color: $gray;
+  }
+  @include respond-at($bp-med) {
+    padding: $pad;
+    line-height: 1;
   }
 }
 

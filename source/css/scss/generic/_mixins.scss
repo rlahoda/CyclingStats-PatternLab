@@ -6,18 +6,64 @@
 	Usage: @include transition(width,0.3s,ease-out);
  */
 @mixin transition($transition-property, $transition-time, $method) {
-	-webkit-transition: $transition-property $transition-time $method;
-	-moz-transition: $transition-property $transition-time $method;
-	-ms-transition: $transition-property $transition-time $method;
-	-o-transition: $transition-property $transition-time $method;
-	transition: $transition-property $transition-time $method;
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
 }
 
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
 	Usage: @include font-size(1, large);
 */
-@mixin font-size( $decimal-size, $keyword: null ) {
-  @if $keyword{ font-size: $keyword; }
-  @else { font-size: $decimal-size * $base-font-multiplier * 16px;}
+@mixin font-size($decimal-size, $keyword: null) {
+  @if $keyword {
+    font-size: $keyword;
+  } @else {
+    font-size: $decimal-size * $base-font-multiplier * 16px;
+  }
   font-size: $decimal-size * 1rem;
 }
+
+/* 
+Media Queries
+
+This one is used frequently to add breakpoints for responsive styling. It is set up using the "min-width" property so any value placed inside the mixin will be effective when the viewport width is met or exceeded. This means that when creating styles, be sure to have the base styles be whatever layout is desired for the smallest viewport and then add styles within the mixins at various widths to build out the layout for wider screen sizes. This corresponds to the "mobile first" philosophy of styling.
+*/
+@mixin respond-at($media) {
+  @media only screen and (min-width: $media) {
+    @content;
+  }
+}
+/* Example of Media Query Mixin:
+ @include respond-at($bp-small) {
+    width: 250px;
+}
+*/
+
+@mixin respond-at-height($media) {
+  @media only screen and (min-height: $media) {
+    @content;
+  }
+}
+
+/* Example of Vertical Media Query Mixin:
+ @include respond-at-height($bp-vert-small) {
+    width: 250px;
+}
+*/
+
+/* This media query is designed for instances when a desired effect is necessary only in a mobile context and otherwise the default settings should apply. An example is using a button at a small screen size. Outside of the small size, the button settings would be fine, but at the small screen size the padding, margin, or other settings might need to be smaller to accomodate the sizing.
+*/
+
+@mixin respond-at-max-height($media) {
+  @media only screen and (max-height: $media) {
+    @content;
+  }
+}
+
+/* Example of Vertical Media Query Mixin:
+ @include respond-at-height($bp-vert-small) {
+    width: 250px;
+}
+*/
