@@ -1,33 +1,45 @@
-.accordion {
-	margin-bottom: $space;
+details summary::-webkit-details-marker {
+  display: none;
 }
 
-.acc-handle {
-	background: $gray-dark-2;
-	color: $white;
-	font-family: $font-secondary;
-	font-weight: bold;
-	display: block;
-	position: relative;
-	padding: $pad-half;
-	border-bottom: 1px solid $gray-light-3;
+summary {
+  // list-style: none;
+  // display: block;
+  cursor: pointer;
+}
 
-	&:after {
-		content:"+";
-		float: right;
-	}
-		
-	&:hover {
-		color: $white;
-		background: $gray-dark;
+details.accordion {
+  width: 100%;
+  border: 1px solid $gray-med;
+  margin-bottom: $space;
+}
+.accordion summary {
+  padding: $pad-half;
+  color: $white;
+  background-color: $gray-med;
+  &:hover {
+    background: var(--primary-drk, $brand-primary-dark);
+    color: var(--primary-drk-txt, $brand-primary-dark-text);
+  }
+  &:active {
+    background: var(--primary-lt, $brand-primary-light);
+    color: var(--primary-lt-txt, $brand-primary-light-text);
+  }
+}
+.accordion__close-button {
+  width: 100%;
+  padding: $pad-half;
+  background-color: $gray-med;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  background-position: right 50% top 50%, 0 0;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 15.6 7.7' style='enable-background:new 0 0 15.6 7.7;' xml:space='preserve'%3E%3Cpolygon style='fill:var(--primary-txt,#{$white});' points='M15.6 7.7L7.8 0 0 7.7z'/%3E%3C/svg%3E%0A");
 
-	}
-	
-	&.active {
-		background: $gray-dark;
-
-		&:after {
-			content:"-";
-		}
-	}
+  &:hover {
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    background-position: right 50% top 50%, 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 15.6 7.7' style='enable-background:new 0 0 15.6 7.7;' xml:space='preserve'%3E%3Cpolygon style='fill:var(--primary-txt,#{$white});' points='M15.6 7.7L7.8 0 0 7.7z'/%3E%3C/svg%3E%0A");
+  }
 }
