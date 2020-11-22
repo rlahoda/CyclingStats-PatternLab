@@ -1,0 +1,18 @@
+.anchor-list__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.anchor-list__list-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.anchor-list__title,
+.anchor-list__item {
+  margin-right: $space;
+}

@@ -63,6 +63,7 @@ select.sel-btn {
   &.sel-btn-small {
     padding: $pad-half;
     padding-right: $pad-double;
+    line-height: 1;
   }
 
   & option {

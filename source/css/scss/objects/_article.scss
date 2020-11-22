@@ -12,6 +12,18 @@
   margin-bottom: $space-half;
 }
 
+.header-faded {
+  width: 100%;
+  padding: $pad;
+  color: var(--primary-txt, $brand-primary-text);
+  background-color: var(--primary, $brand-primary);
+  background: linear-gradient(
+    90deg,
+    var(--primary, $brand-primary) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
 //Social Share
 .social-share {
   overflow: hidden;
