@@ -1,0 +1,97 @@
+/*------------------------------------*\
+    $TABLE OF CONTENTS 
+    based generally on Harry Roberts excellent CSS Guidelines https://github.com/csswizardry/CSS-Guidelines
+\*------------------------------------*/
+/**
+ * VARIABLES..............................Declarations of Sass variables 
+ * .....Colors
+ * .....Typography
+ * .....Layout
+ * .....Defaults
+ * .....Breakpoints
+ * MIXINS.................................Sass mixins 
+ * RESET..................................Set reset defaults
+ * GLOBAL CLASSES.........................Set reset defaults
+ * GLOBAL ELEMENTS........................Establish global styles
+ * .....Main
+ * .....Headings
+ * .....Text-related elements (p, blockquote, lists)
+ * .....Defaults
+ * .....Breakpoints
+ * TYPOGRAPHY------------------------------
+ * MEDIA------------------------------
+ * LAYOUT------------------------------
+ * NAVIGATION------------------------------
+ * TOC To Be Continued
+ */
+
+@import "variables";
+@import "mixins";
+@import "reset";
+
+/* Define your base font-size here; most elements will inherit this. */
+html {
+  font-size: 1em; /* Assuming 16px... */
+  line-height: 1.5; /* 24px (This is now our magic number; all subsequent margin-bottoms and line-heights want to be a multiple of this number in order to maintain vertical rhythm.) */
+}
+
+body {
+  background: $white;
+  font: 100%/1.5 $font;
+  -webkit-text-size-adjust: 100%;
+  color: $gray-dark;
+}
+
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+[role="main"] {
+  padding: $pad-half $pad-half $pad-double;
+  overflow: hidden;
+}
+
+/*------------------------------------*\
+    $GLOBAL ELEMENTS
+\*------------------------------------*/
+@import "00-atoms/01-global/global-classes";
+@import "00-atoms/02-text/links";
+@import "00-atoms/02-text/headings";
+@import "00-atoms/02-text/text";
+@import "00-atoms/03-lists/lists";
+@import "00-atoms/04-images/media";
+@import "00-atoms/05-forms/forms";
+@import "00-atoms/07-tables/tables";
+@import "00-atoms/01-global/animation";
+@import "00-atoms/01-global/colors";
+@import "00-atoms/01-global/loading-animation";
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+@import "01-molecules/01-layout/layout";
+
+/*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+@import "02-organisms/00-global/header";
+@import "01-molecules/05-navigation/nav";
+@import "01-molecules/05-navigation/primary-nav";
+@import "02-organisms/00-global/footer";
+
+/*------------------------------------*\
+    $TEXT Styles
+\*------------------------------------*/
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+@import "00-atoms/04-images/icons";
+@import "00-atoms/06-buttons/buttons";
+@import "01-molecules/02-blocks/blocks";
+@import "00-atoms/02-text/tooltip";
+@import "01-molecules/06-components/accordion";
+@import "01-molecules/05-navigation/tabs";
+@import "02-organisms/03-sections/sections";
+@import "02-organisms/01-article/article";
+@import "01-molecules/05-navigation/breadcrumbs";
+@import "01-molecules/05-navigation/anchor-link-list";
