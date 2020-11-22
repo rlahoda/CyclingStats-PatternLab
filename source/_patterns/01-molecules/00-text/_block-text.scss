@@ -1,0 +1,31 @@
+.block-heading-text__heading {
+  font-weight: $font-weight-medium;
+}
+
+.heading-inline-content__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: $space;
+  width: 100%;
+  @include respond-at($bp-med) {
+    width: 40%;
+  }
+}
+
+.heading-inline-content__heading,
+.heading-inline-content__content {
+  width: 80%;
+  flex: 1 1 auto;
+  text-align: left;
+  @include respond-at($bp-small-2) {
+    width: 40%;
+  }
+}
+.heading-inline-content__heading {
+  font-weight: $font-weight-medium;
+}
+
+.heading-inline-content__content {
+  font-weight: $font-weight-light;
+}
