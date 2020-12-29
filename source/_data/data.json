@@ -79,5 +79,16 @@
   "hero": true,
   "emergency": false,
   "touts": [{}, {}, {}],
-  "latest_posts": [{}, {}, {}, {}, {}]
+  "latest_posts": [{}, {}, {}, {}, {}],
+  "riderData": {
+    "info": {
+      "Hometown": "Roseville, California, USA",
+      "Age": 24,
+      "Birthday": "3 Sept 1996",
+      "Height": "183cm",
+      "Languages Spoken": "English",
+      "First Pro Season": "2016"
+    },
+    "biography": "Neilson Powless is an American cyclist, who currently rides for UCI WorldTeam EF Pro Cycling. In August 2019, he was named in the startlist for the 2019 Vuelta a España. In August 2020, he was named in the startlist for the 2020 Tour de France. Powless, who is Oneida, is the first Native American to compete in the Tour de France. His mother Jen Allred ran the marathon for Guam at the 1992 Summer Olympics He is also the brother of fellow racing cyclist Shayna Powless."
+  }
 }

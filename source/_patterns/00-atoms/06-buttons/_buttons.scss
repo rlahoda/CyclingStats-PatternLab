@@ -29,6 +29,7 @@ input[type="submit"],
   &:disabled {
     background: $gray-light-2;
     color: $gray;
+    cursor: default;
   }
   @include respond-at($bp-med) {
     padding: $pad;

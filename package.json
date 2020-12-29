@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "patternlab build --config ./patternlab-config.json",
     "build:uikit": "cross-env-shell PL_CONFIG_PATH='${INIT_CWD}/.patternlabrc.js' npm run build --prefix node_modules/@pattern-lab/uikit-workshop -- --patternlabrc '$PL_CONFIG_PATH'",
-    "dev": "node ./node_modules/@pattern-lab/uikit-workshop/build-tools.js",
+    "dev": "gulp compile & npm run serve",
     "help": "patternlab --help",
     "install": "patternlab install --config ./patternlab-config.json",
     "serve": "patternlab serve --config ./patternlab-config.json",
