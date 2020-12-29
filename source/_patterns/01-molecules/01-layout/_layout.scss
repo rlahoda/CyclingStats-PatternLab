@@ -3,10 +3,17 @@
 \*------------------------------------*/
 
 /* Layout Container */
-.lc {
+.container {
   max-width: $max-width;
   margin: 0 auto;
   padding: $pad-half;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  background-color: $white;
+}
+
+.demo div {
+  border: 1px solid black;
 }
 
 /*------------------------------------*\
@@ -20,23 +27,66 @@
 \*------------------------------------*/
 
 /* Grid Container */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* Grid Item */
+.grid-item {
+  flex: 1 1 auto;
+}
 
 /* Grid 1up */
+.grid-1up {
+  .grid-item {
+    width: 100%;
+  }
+}
 
 /* Grid 2up */
+.grid-2up {
+  .grid-item {
+    width: 45%;
+  }
+}
 
 /* Grid Half (Always displayed side by side) */
+.grid-half {
+  .grid-item {
+    width: 45%;
+  }
+}
 
 /* Grid 3up */
+.grid-3up {
+  .grid-item {
+    width: 30%;
+  }
+}
 
 /* Grid 4up */
+.grid-4up {
+  .grid-item {
+    width: 20%;
+  }
+}
 
 /* Grid Quarter (Always displayed side by side) */
+.grid-quarter {
+  .grid-item {
+    width: 25%;
+  }
+}
 
 /* Grid 5up */
 
 /* Grid 2/3 */
 
 /* Grid 4up block */
+
+/* Layout Spread Items */
+.layout-spread {
+  display: flex;
+  justify-content: space-between;
+}

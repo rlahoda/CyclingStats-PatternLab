@@ -2,3 +2,11 @@
   height: 1.5em;
   fill: var(--primary, $brand-primary);
 }
+a > .icon:hover {
+  fill: var(--primary-lt, $brand-primary-light);
+}
+
+.country-flag {
+  height: 1em;
+  margin: 0 1em;
+}
